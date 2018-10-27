@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ADUGBO MI</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/leaflet.css" />
+
+
+</head>
+
+<body onload="showmap()">
+
+    <!--Main Navigation-->
+
+    
+    <header class="mx-auto">
+        <div class"container" style="text-align:center;">
+            <a class="navbar-brand waves-effect" style="text-align:center;" href="index.html" target="_blank">
+                <img src="img/sefa.png">
+            </a>
+        </div>
+        <!-- Navbar -->
+        <nav class="navbar  navbar-expand-lg navbar-light white scrolling-navbar navbar-center">
+            <div class="container">
+
+                
+        <!-- Brand -->
+        
+        
+
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- Left -->
+                    <ul class="navbar-nav mx-auto">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect text-primary bold" href="" target="_blank">US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect text-primary bold" href="" target="_blank">Canada</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect text-primary bold" href="" target="_blank">Europe</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link waves-effect text-primary bold" href="" target="_blank">Asia/pacific/Middle-East</a>
+                        </li>
+
+                        <li class="nav-item">
+                                <a class="nav-link waves-effect text-primary bold" href="" target="_blank">Oceania</a>
+                        </li>
+
+                        <li class="nav-item">
+                                <a class="nav-link waves-effect text-primary bold" href="" target="_blank">Latin America</a>
+                        </li>
+
+                        <li class="nav-item">
+                                <a class="nav-link waves-effect text-primary bold" href="" target="_blank">Africa</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <!-- Navbar -->
+
+        <!--Section: search form-->
+        <section class="container-fluid">
+            <div class="row">
+
+
+                <div class="my-2 col-md-6 input-group px-5">
+                <form class="form-group" style="width:100%;" > 
+                     <input type="text" class="form-control bold" placeholder="Search" style="border:;">
+                        <span class="input-group-addon bg-white border-left-0"><i class="ion-search"></i></span>
+                    </form>
+                </div>
+                            <div class="col-md-4">
+
+                                    <nav class="navbar  navbar-expand-lg navbar-light white scrolling-navbar navbar-center mt-1 pt-1 pb-2" style="box-shadow: unset;">
+                                
+                                        <!-- Collapse -->
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#subnav" aria-controls="navbarSupportedContent"
+                                            aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class=""><a class="nav-link waves-effect text-primary dropdown-toggle"  href="" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false"></a>
+                                            </span>
+                                        </button>
+                                
+                                                <!-- Links -->
+                                                <div class="collapse navbar-collapse" id="subnav">
+                                
+                                                    <!-- Left -->
+                                                    <ul class="navbar-nav mx-3 "style="color:#8ab;">
+                                                        
+                                                        <li class="nav-item">
+                                                            <a class="nav-link waves-effect text-primary" href="" target="_blank"><i class="fa fa-lg fa-video-camera"></i></a>
+                                                        </li>
+                                                        
+                                                        <li class="nav-item">
+                                                            <a class="nav-link waves-effect text-primary" href="" target="_blank"><i class="fa fa-lg fa-suitcase"></i></a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link waves-effect text-primary" href="" target="_blank"><i class="fa fa-lg fa-th"></i></a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                                <a class="nav-link waves-effect text-primary" href="" target="_blank"><i class="fa fa-lg fa-bell"></i></a>
+
+                                                        </li>
+                                                        <li class="nav-item">
+                                                                <a class="nav-link waves-effect text-primary bold" href="" target="_blank">SIGN IN </a>
+                                                        </li>
+                                
+                                                    </ul>
+                                                
+                                                </div>
+                                        </nav>
+
+                                    </div>
+                                    
+                                    <div class="col-md-2 dropleft"><button type="button" class="btn btn-circle btn-red dropdown-toggle"    href="" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false"><i class="fa fa-th-list pr-2" aria-hidden="true"></i>Videos</button>
+                                        <div class="dropdown-menu grey-gradient dropdown-primary subside" style="width:310px;">
+                                                <a class="dropdown-item bolds" id="showVideo" href="#"><i class="fa fa-lg fa-video-camera blue-text ml-3 pr-3 small-icons"></i>Video Collection</a>
+                                                <a class="dropdown-item bolds " href="#" id="showMap"><i class="fa fa-lg fa-map blue-text ml-3 pr-3 small-icons"></i>Map View</a>
+                                                <div class="dropdown-divider bg-green green-text"></div>
+                                                <a class="dropdown-item bolds " href="#"><i class="fa fa-lg fa-home blue-text ml-3 pr-3 small-icons"></i>Home</a>
+                                                <b><a class="dropdown-item bolds" href="#"><i class="fa fa-lg fa-fire blue-text ml-3 pr-3 small-icons"> </i>Trending</a></b>
+                                                <a class="dropdown-item bolds" href="#"> <i class="fa fa-lg fa-random blue-text ml-3 pr-3 small-icons "></i>Subscription</a>
+                                               
+                                                <a class="dropdown-item bolds" href="#"><i class="fa fa-lg fa-map-pin blue-text ml-3 pr-3 small-icons"></i>Countries</a>
+                                
+                                                <div class="dropdown-divider bg-green green-text"></div>
+                                                <a class="dropdown-item bolds " id="dark-theme" href="#"><i class="fa fa-lg fa-hotel blue-text ml-3 pr-3 small-icons"></i>Dark Theme</a>
+                                                <a class="dropdown-item bolds" href="#"><i class="fa fa-lg fa-language blue-text ml-3 pr-3 small-icons"></i>Language</a>
+                                                <a class="dropdown-item bolds" href="#"><i class="fa fa-lg fa-wrench blue-text ml-3 pr-3 small-icons"></i>Settings</a>
+                                                <a class="dropdown-item bolds" href="#"><i class="fa fa-lg fa-info-circle blue-text ml-3 pr-3 small-icons"></i>Help</a>
+                                                <a class="dropdown-item bolds" href="#"><i class="fa fa-lg fa-history blue-text ml-3 pr-3 small-icons"></i>History</a>
+                                              </div>
+                                              <!-- Basic dropdown -->
+                                           
+                                    </div>
+                                </div>
+            </section>
+            <!--Section: search form-->
+
+
+
+
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="mt-1 pt-1 home">
+        <div class="container-fluid">
+
+            <!--Section: Jumbotron-->
+            <section class=" wow fadeIn world" id="mapid" style="height:500px; width:100%;  box-shadow: -4px -5px 8px grey;">
+
+                
+                <!-- Content -->
+            </section>
+            <!--Section: Jumbotron-->
+         </div>
+             <!--Section: search form-->
+            
+
+            <hr class="my-3">
+
+           <div class= "container-fluid">
+            <!--Section: Cards-->
+            <section class="text-left card-section "style="padding-left:30px; padding-right:30px;" id="video">
+                <h4 class="mx-5"><b>Trending</b></h4>
+                <!--Grid row-->
+                <div class="row mb-2 wow fadeIn">
+
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6" style="padding:3px;">
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <div class="embed-responsive embed-responsive-16by9 rounded-top">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cXTThxoywNQ" allowfullscreen></iframe>
+                                    <div class="mask flex-center rgba-blue-strong">">
+                                            <strong class="text-sm">there agric output</strong>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body ">
+                                <!--Title-->
+                                <h6 class="mb-2" >
+                                    <strong class="">There agric output</strong>
+                                </h6>
+                                    <a>Tello<i class="fa fa-check-circle"></i></a>
+                                </p>
+                                <p>
+                                    <a>2.1M views</a> <a>.11months ago</a>
+                                </p>
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6"style="padding:3px;">
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+
+                                <img src="img/murmuye.JPG" class="card-img-top" alt="">
+                                <a href="" target="_blank">
+                                    <div class="mask flex-center rgba-blue-strong">
+                                            <strong class="text-sm">The bahamas</strong>
+
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h6 class="mb-2">
+                                    <strong class="text-sm">The bahamas</strong>
+                                </h6>
+                                <p>
+                                    <a>Tello<i class="fa fa-check-circle"></i></a>
+                                </p>
+                                <p>
+                                    <a>2.1M views</a> <a>.11months ago</a>
+                                </p>
+                                
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+
+                    </div>
+                    <!--Grid column-->
+
+                        <!--Grid column-->
+                    <div class="col-lg-2 col-md-6 sec"style="padding:3px;">
+
+                            <!--Card-->
+                            <div class="card">
+    
+                                <!--Card image-->
+                                <div class="view overlay">
+                                    <img src="img/tiv.jpg" class="card-img-top img-fluid" alt="">
+                                    <a href="" target="_blank">
+                                            <div class="mask flex-center rgba-blue-strong">">
+                                                    <strong class="text-sm">look out the best</strong>
+        
+                                            </div>
+                                    </a>
+                                </div>
+    
+                                <!--Card content-->
+                                <div class="card-body">
+                                    <!--Title-->
+                                    <h6 class="mb-2">
+                                        <strong class="text-responsive">look out the best</strong>
+                                    </h6>
+                                    <p>
+                                        <a>Tello<i class="fa fa-check-circle"></i></a>
+                                    </p>
+                                    <p>
+                                        <a>2.1M views</a> <a class="">2.1months ago</a>
+                                    </p>
+                                    
+                                </div>
+    
+                            </div>
+                            <!--/.Card-->
+    
+                        </div>
+                        <!--Grid column-->
+
+                            <!--Grid column-->
+                    <div class="col-lg-2 col-md-6"style="padding:3px;">
+
+                            <!--Card-->
+                            <div class="card">
+    
+                                <!--Card image-->
+                                <div class="view overlay">
+                                    <img src="img/murmuye.JPG" class="card-img-top img-responsive img-fluid image-video" alt="">
+                                    <a href="" target="_blank">
+                                            <div class="mask flex-center rgba-blue-strong">">
+                                                    <strong class="text-sm">how to prepare</strong>
+        
+                                            </div>
+                                    </a>
+                                </div>
+    
+                                <!--Card content-->
+                                <div class="card-body">
+                                    <!--Title-->
+                                    <h6 class="mb-2">
+                                        <strong>How to prepare</strong>
+                                    </h6>
+                                    <p>
+                                        <a>Tello<i class="fa fa-check-circle"></i></a>
+                                    </p>
+                                    <p>
+                                        <a>2.1M views</a> <a>.11months ago</a>
+                                    </p>                                  
+                                </div>
+    
+                            </div>
+                            <!--/.Card-->
+    
+                        </div>
+                        <!--Grid column-->
+
+                            <!--Grid column-->
+                    <div class="col-lg-2 col-md-6"style="padding:3px;">
+
+                            <!--Card-->
+                            <div class="card">
+    
+                                <!--Card image-->
+                                <div class="view overlay card-img">
+                                    <img src="img/tiv.JPG" class="card-img-top img-fluid" alt="">
+                                    <a href="" target="_blank">
+                                            <div class="mask flex-center rgba-blue-strong">">
+                                                    <strong class="text-sm">The local food of swaz</strong>
+        
+                                            </div>
+                                    </a>
+                                </div>
+    
+                                <!--Card content-->
+                                <div class="card-body">
+                                    <!--Title-->
+                                    <h6 class="mb-2">
+                                        <strong>The local food of swaz</strong>
+                                    </h6>
+                                    <p>
+                                        <a>Tello<i class="fa fa-check-circle"></i></a>
+                                    </p>
+                                    <p>
+                                        <a>2.1M views</a> <a>.11months ago</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--/.Card-->
+    
+                        </div>
+                        <!--Grid column-->
+    
+    
+    
+
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6 "style="padding:3px;">
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img src="img/tiv.JPG" class="card-img-top img-fluid" alt="">
+                                <a href="" target="_blank">
+                                        <div class="mask flex-center rgba-blue-strong">">
+                                                <strong class="text-sm">Dancing bachama</strong>
+    
+                                        </div>
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h6 class="mb-2">
+                                    <strong>Dancing bachama</strong>
+                                </h6>
+                                <p>
+                                    <a>Tello<i class="fa fa-check-circle"></i></a>
+                                </p>
+                                <p>
+                                    <a>2.1M views</a> <a>.11months ago</a>
+                                </p>               
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+
+                    </div>
+                    <!--Grid column-->
+
+                    
+
+                </div>
+        
+                
+                <!--Grid row-->
+
+
+                <div class=" row">
+                    <h4 class="col-md-10"><b>Recomending</b></h4>
+                    <h5 class="col-md-2  subs bolds"  style="background-color:rgb(212, 5, 5);"><button type="button" class="btn">Subscription</button>
+                    </h5>
+                </div>
+
+
+                <!--Grid row-->
+                <div class="row mb-2 wow fadeIn">
+
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6" style="padding:3px;">
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img src="img/tiv.JPG" class="card-img-top img-fluid" alt="">
+                                <a href="" target="_blank">
+                                        <div class="mask flex-center rgba-blue-strong">">
+                                                <strong class="text-sm">Learn Bootstrap 4 with MDB</strong>
+    
+                                        </div> 
+                                 </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h6 class="mb-2">
+                                    <strong>Learn Bootstrap 4 with MDB</strong>
+                                </h6>
+                                <p>
+                                    <a>Tello<i class="fa fa-check-circle"></i></a>
+                                </p>
+                                <p>
+                                    <a>2.1M views</a> <a>.11months ago</a>
+                                </p>
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6 " style="padding:3px;">
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img src="img/tiv.JPG" class="card-img-top img-fluid" alt="">
+                                <a href="" target="_blank">
+                                        <div class="mask flex-center rgba-blue-strong">">
+                                                <strong class="text-sm">The local cel in Jalingo</strong>
+    
+                                        </div> 
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h6 class="mb-2">
+                                    <strong class="text-responsive">The local cel in Jalingo</strong>
+                                </h6>
+                                <p>
+                                    <a>Tello<i class="fa fa-check-circle"></i></a>
+                                </p>
+                                <p>
+                                    <a>2.1M views</a> <a>.11months ago</a>
+                                </p>
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6" style="padding:3px;">
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img src="img/murmuye.JPG" class= "card-img-top img-fluid" alt="">
+                                <a href="" target="_blank">
+                                        <div class="mask flex-center rgba-blue-strong">">
+                                                <strong class="text-sm">Check these out</strong>
+    
+                                        </div> 
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h6 class="mb-2">
+                                    <strong>Check these out</strong>
+                                </h6>
+                                <p>
+                                    <a>Tello<i class="fa fa-check-circle"></i></a>
+                                </p>
+                                <p>
+                                    <a>2.1M views</a> <a>.11months ago</a>
+                                </p>
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+
+                    </div>
+                    <!--Grid column-->
+
+                     <!--Grid column-->
+                    <div class="col-lg-2 col-md-6 "style="padding:3px;">
+
+                            <!--Card-->
+                            <div class="card">
+    
+                                <!--Card image-->
+                                <div class="view overlay">
+                                    <img src="img/tiv.JPG" class="card-img-top img-fluid" alt="">
+                                    <div class="mask flex-center rgba-blue-strong">">
+                                            <strong class="text-sm">Tiv cultural festival</strong>
+
+                                    </div> 
+                                </div>
+    
+                                <!--Card content-->
+                                <div class="card-body">
+                                    <!--Title-->
+                                    <h6 class="mb-2">
+                                        <strong>Tiv cultural festival</strong>
+                                    </h6>
+                                    <p>
+                                        <a>Tello<i class="fa fa-check-circle"></i></a>
+                                    </p>
+                                    <p>
+                                        <a>2.1M views</a> <a>.11months ago</a>
+                                    </p>
+                                </div>
+    
+                            </div>
+                            <!--/.Card-->
+    
+                        </div>
+                        <!--Grid column-->
+    
+                         <!--Grid column-->
+                    <div class="col-lg-2 col-md-6"style="padding:3px;">
+
+                            <!--Card-->
+                            <div class="card">
+    
+                                <!--Card image-->
+                                <div class="view overlay">
+                                    <img src=img/murmuye.JPG class="card-img-top img-fluid" alt="">
+                                    <a href="" target="_blank">
+                                        <div class="mask flex-center rgba-blue-strong">">
+                                            <strong class="text-sm">The murmuye group</strong>
+                                         </div> 
+                                    </a>
+                                </div>
+    
+                                <!--Card content-->
+                                <div class="card-body">
+                                    <!--Title-->
+                                    <h6 class="mb-2">
+                                        <strong>The murmuye group</strong>
+                                    </h6>
+                                    <p>
+                                        <a>Tello<i class="fa fa-check-circle"></i></a>
+                                    </p>
+                                    <p>
+                                        <a>2.1M views</a> <a>.11months ago</a>
+                                    </p>
+                                </div>
+    
+                            </div>
+                            <!--/.Card-->
+    
+                        </div>
+                        <!--Grid column-->
+    
+                         <!--Grid column-->
+                    <div class="col-lg-2 col-md-6" style="padding:3px;">
+
+                            <!--Card-->
+                            <div class="card">
+    
+                                <!--Card image-->
+                                <div class="view overlay">
+                                    <img src="img/murmuye.JPG" class="card-img-top img-fluid" alt="">
+                                    <a href="https://mdbootstrap.com/vue/" target="_blank">
+                                        <div class="mask flex-center rgba-blue-strong">">
+                                                <strong class="text-sm">The Murmuye dancing</strong>
+                                             </div> 
+                                    </a>
+                                </div>
+    
+                                <!--Card content-->
+                                <div class="card-body">
+                                    <!--Title-->
+                                    <h6 class="mb-2">
+                                        <strong>The Murmuye dancing</strong>
+                                    </h6>
+                                    <p>
+                                        <a>Tello<i class="fa fa-check-circle"></i></a>
+                                    </p>
+                                    <p>
+                                        <a>2.1M views</a> <a>.11months ago</a>
+                                    </p>
+                                </div>
+    
+                            </div>
+                            <!--/.Card-->
+    
+                        </div>
+                        <!--Grid column-->
+    
+
+                </div>
+                <!--Grid row-->
+
+
+
+                <h4 class="mx-4"><b>Continents</b></h4>
+
+
+                <!--Grid row-->
+                <div class="row mb-2 wow fadeIn">
+
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6" style="padding:3px;">
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img src="img/tiv.JPG" class="card-img-top img-fluid" alt="">
+                                <a href="https://mdbootstrap.com/angular/" target="_blank">
+                                    <div class="mask flex-center rgba-blue-strong">">
+                                            <strong class="text-sm">why we give birth to</strong>
+                                         </div> 
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h6 class="mb-2">
+                                    <strong>Become better at these</strong>
+                                </h6>
+                                <p>
+                                    <a>Tello<i class="fa fa-check-circle"></i></a>
+                                </p>
+                                <p>
+                                    <a>2.1M views</a> <a>.11months ago</a>
+                                </p>
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6 " style="padding:3px;">
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img src="img/tiv.JPG" class="card-img-top img-fluid" alt="">
+                                <a href="" target="_blank">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h6 class="mb-2">
+                                    <strong class="text-responsive">The local cel in Jalingo</strong>
+                                </h6>
+                                <p>
+                                    <a>Tello<i class="fa fa-check-circle"></i></a>
+                                </p>
+                                <p>
+                                    <a>2.1M views</a> <a>.11months ago</a>
+                                </p>
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6" style="padding:3px;">
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img src="img/murmuye.JPG" class= "card-img-top img-fluid" alt="">
+                                <a href="https://mdbootstrap.com/vue/" target="_blank">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h6 class="mb-2">
+                                    <strong>Check these out</strong>
+                                </h6>
+                                <p>
+                                    <a>Tello<i class="fa fa-check-circle"></i></a>
+                                </p>
+                                <p>
+                                    <a>2.1M views</a> <a>.11months ago</a>
+                                </p>
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+
+                    </div>
+                    <!--Grid column-->
+
+                     <!--Grid column-->
+                    <div class="col-lg-2 col-md-6 "style="padding:3px;">
+
+                            <!--Card-->
+                            <div class="card">
+    
+                                <!--Card image-->
+                                <div class="view overlay">
+                                    <img src="img/tiv.JPG" class="card-img-top img-fluid" alt="">
+                                   
+                                </div>
+    
+                                <!--Card content-->
+                                <div class="card-body">
+                                    <!--Title-->
+                                    <h6 class="mb-2">
+                                        <strong>Tiv cultural festival</strong>
+                                    </h6>
+                                    <p>
+                                        <a>Tello<i class="fa fa-check-circle"></i></a>
+                                    </p>
+                                    <p>
+                                        <a>2.1M views</a> <a>.11months ago</a>
+                                    </p>
+                                </div>
+    
+                            </div>
+                            <!--/.Card-->
+    
+                        </div>
+                        <!--Grid column-->
+    
+                         <!--Grid column-->
+                    <div class="col-lg-2 col-md-6"style="padding:3px;">
+
+                            <!--Card-->
+                            <div class="card">
+    
+                                <!--Card image-->
+                                <div class="view overlay">
+                                    <img src=img/murmuye.JPG class="card-img-top img-fluid" alt="">
+                                    <a href="" target="_blank">
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+    
+                                <!--Card content-->
+                                <div class="card-body">
+                                    <!--Title-->
+                                    <h6 class="mb-2">
+                                        <strong>The murmuye group</strong>
+                                    </h6>
+                                    <p>
+                                        <a>Tello<i class="fa fa-check-circle"></i></a>
+                                    </p>
+                                    <p>
+                                        <a>2.1M views</a> <a>.11months ago</a>
+                                    </p>
+                                </div>
+    
+                            </div>
+                            <!--/.Card-->
+    
+                        </div>
+                        <!--Grid column-->
+    
+                         <!--Grid column-->
+                    <div class="col-lg-2 col-md-6" style="padding:3px;">
+
+                            <!--Card-->
+                            <div class="card">
+    
+                                <!--Card image-->
+                                <div class="view overlay">
+                                    <img src="img/murmuye.JPG" class="card-img-top img-fluid" alt="">
+                                    <a href="" target="_blank">
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+    
+                                <!--Card content-->
+                                <div class="card-body">
+                                    <!--Title-->
+                                    <h6 class="mb-2">
+                                        <strong>The Murmuye dancing</strong>
+                                    </h6>
+                                    <p>
+                                        <a>Tello<i class="fa fa-check-circle"></i></a>
+                                    </p>
+                                    <p>
+                                        <a>2.1M views</a> <a>.11months ago</a>
+                                    </p>
+                                </div>
+    
+                            </div>
+                            <!--/.Card-->
+    
+                        </div>
+                        <!--Grid column-->
+                         <!--Pagination-->
+                <nav class="d-flex justify-content-center wow fadeIn text-center mx-auto">
+                    <ul class="pagination pg-blue">
+
+                        <!--Arrow left-->
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+
+                        <li class="page-item active">
+                            <a class="page-link" href="#">1
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">4</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--Pagination-->
+
+
+                </div>
+                <!--Grid row-->
+
+            </section>
+
+               
+            </section>
+            <!--Section: Cards-->
+        </div>
+        </div>
+    </main>
+    <!--Main layout-->
+
+    <!--Footer-->
+    <footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn blue bg-primary">
+
+        <!--Call to action-->
+        <div class="pt-4">
+            <a class="btn btn-outline-white" href="" target="_blank" role="button">Download Videos
+                <i class="fa fa-download ml-2"></i>
+            </a>
+            <a class="btn btn-outline-white" href="" target="_blank" role="button">Start MI
+                <i class="fa fa-graduation-cap ml-2"></i>
+            </a>
+        </div>
+        <!--/.Call to action-->
+
+        <hr class="my-4">
+
+        <!-- Social icons -->
+        <div class="pb-4">
+            <a href="" target="_blank">
+                <i class="fa fa-facebook mr-3"></i>
+            </a>
+
+            <a href="" target="_blank">
+                <i class="fa fa-twitter mr-3"></i>
+            </a>
+
+            <a href="" target="_blank">
+                <i class="fa fa-youtube mr-3"></i>
+            </a>
+
+            <a href="" target="_blank">
+                <i class="fa fa-google-plus mr-3"></i>
+            </a>
+
+            <a href="" target="_blank">
+                <i class="fa fa-dribbble mr-3"></i>
+            </a>
+
+            <a href="" target="_blank">
+                <i class="fa fa-pinterest mr-3"></i>
+            </a>
+
+            <a href="" target="_blank">
+                <i class="fa fa-github mr-3"></i>
+            </a>
+
+            <a href="/" target="_blank">
+                <i class="fa fa-codepen mr-3"></i>
+            </a>
+        </div>
+        <!-- Social icons -->
+
+        <!--Copyright-->
+        <div class="footer-copyright py-3">
+            © 2018 Copyright:
+            <a href="https://iyanu.io" target="_blank"> Iyanu </a>
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+ <!-- leaflet -->
+ <script src="js/leaflet.js"></script>
+ <!-- custom js -->
+ <script type="text/javascript" src="js/custom.js"></script>
+ 
+
+
+    <!-- Initializations -->
+    <script type="text/javascript">
+        // Animations initialization
+        new WOW().init();
+    </script>
+   
+
+</body>
+
+</html>

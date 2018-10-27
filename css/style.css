@@ -1,0 +1,99 @@
+/*nav*/
+.bold{
+    font-weight: bolder;
+}
+.bolds{font-weight: bold;}
+
+
+.small-icons {
+    margin-top:0px;
+font-size: 24px;
+height: 30px;
+width: 30px;
+line-height: 45px;
+color: #fff;
+margin-right: 10px;
+text-align: center;
+display: inline-block;
+border-radius: 100%;
+margin-bottom: 10px;
+}
+
+/*nav*/
+
+
+p{
+    color:rgb(81, 134, 143);
+    margin:1px 2px;
+    padding:2px;
+}
+
+
+.card-section{
+    display:none;
+}
+
+.home .card{
+    box-shadow: unset;
+    display:block;
+    height:300px;
+}
+
+.home .card-body{
+    display:block;
+    height:150px;
+}
+
+.home .card-body p{
+    font-size:13px;
+}
+
+
+.sec{
+    max-height:300px;
+}
+.subs{text-align: center;
+    color:white;
+
+}
+
+
+.nav-small{
+    padding: 2px;
+}
+
+/*Rtyhr-section*/
+.Rtyhr-body{
+    font-weight: normal;
+}
+
+.de{background-color: brown;
+}
+
+
+
+
+/*Rtyhr-section*/
+
+/*Rrt-section*/
+
+#side-dashboard{
+    max-height:700px;
+}
+
+.dashboard .card-body p{
+    font-size:13px;
+}
+
+.dashboard .card{
+    box-shadow: unset;
+    display:block;
+    height:300px;
+}
+
+.dashboard .card-body{
+    display:block;
+    height:150px;
+}
+
+/*Rrt-section*/
