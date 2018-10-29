@@ -1,25 +1,27 @@
-function showmap(){
-$('#mapid').show();
-$('#video').hide();
 
-}
-
-
+//video and map show section
 
 $(document).ready(function(){
     $('#showVideo').click(function(){
         $('#video').fadeIn();
         $('#mapid').hide();
     });
-});
 
-$(document).ready(function(){
+
     $('#showMap').click(function(){
         $('#video').hide();
-        $('#mapid').fadeIn();
-    });
+		$('#mapid').fadeIn();
+	});
 
-    // close button
+	$('#icon-show-map-video').click(function(){
+        $('#id="icon-links-sub"').hide();
+	});
+
+});
+
+
+	$(document).ready(function(){
+    // close button for dashboard
     $('#close-icon').click(function() {
 		$('#side-dashboard').fadeOut();
 		$('#more').fadeIn();

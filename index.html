@@ -91,13 +91,13 @@
 
                 <div class="my-2 col-md-6 input-group px-5">
                 <form class="form-group" style="width:100%;" > 
-                     <input type="text" class="form-control bold" placeholder="Search" style="border:;">
+                     <input type="text" class="form-control bold" placeholder="Search">
                         <span class="input-group-addon bg-white border-left-0"><i class="ion-search"></i></span>
                     </form>
                 </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4" id="icon-nava">
 
-                                    <nav class="navbar  navbar-expand-lg navbar-light white scrolling-navbar navbar-center mt-1 pt-1 pb-2" style="box-shadow: unset;">
+                                    <nav class="navbar  navbar-expand-lg navbar-light white scrolling-navbar navbar-center mt-1 pt-1 pb-2" style="box-shadow: unset;" >
                                 
                                         <!-- Collapse -->
                                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#subnav" aria-controls="navbarSupportedContent"
@@ -111,23 +111,23 @@
                                                 <div class="collapse navbar-collapse" id="subnav">
                                 
                                                     <!-- Left -->
-                                                    <ul class="navbar-nav mx-3 "style="color:#8ab;">
+                                                    <ul class="navbar-nav mx-3 "style="color:#8ab;" >
                                                         
-                                                        <li class="nav-item">
+                                                        <li class="nav-item" id="icon-links-sub">
                                                             <a class="nav-link waves-effect text-primary" href="" target="_blank"><i class="fa fa-lg fa-video-camera"></i></a>
                                                         </li>
                                                         
-                                                        <li class="nav-item">
+                                                        <li class="nav-item"id="icon-links-sub">
                                                             <a class="nav-link waves-effect text-primary" href="" target="_blank"><i class="fa fa-lg fa-suitcase"></i></a>
                                                         </li>
-                                                        <li class="nav-item">
+                                                        <li class="nav-item"id="icon-links-sub">
                                                             <a class="nav-link waves-effect text-primary" href="" target="_blank"><i class="fa fa-lg fa-th"></i></a>
                                                         </li>
                                                         <li class="nav-item">
                                                                 <a class="nav-link waves-effect text-primary" href="" target="_blank"><i class="fa fa-lg fa-bell"></i></a>
 
                                                         </li>
-                                                        <li class="nav-item">
+                                                        <li class="nav-item" id="icon-links-sub">
                                                                 <a class="nav-link waves-effect text-primary bold" href="" target="_blank">SIGN IN </a>
                                                         </li>
                                 
@@ -138,8 +138,11 @@
 
                                     </div>
                                     
-                                    <div class="col-md-2 dropleft"><button type="button" class="btn btn-circle btn-red dropdown-toggle"    href="" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false"><i class="fa fa-th-list pr-2" aria-hidden="true"></i>Videos</button>
+                                    <div class="col-md-2 dropleft">
+                                        
+                                        <button type="button" class="btn btn-circle btn-red dropdown-toggle"  id="icon-show-map-video"  href="" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false"><i class="fa fa-th-list pr-2" aria-hidden="true"></i>More</button>
+
                                         <div class="dropdown-menu grey-gradient dropdown-primary subside" style="width:310px;">
                                                 <a class="dropdown-item bolds" id="showVideo" href="#"><i class="fa fa-lg fa-video-camera blue-text ml-3 pr-3 small-icons"></i>Video Collection</a>
                                                 <a class="dropdown-item bolds " href="#" id="showMap"><i class="fa fa-lg fa-map blue-text ml-3 pr-3 small-icons"></i>Map View</a>
@@ -175,7 +178,7 @@
         <div class="container-fluid">
 
             <!--Section: Jumbotron-->
-            <section class=" wow fadeIn world" id="mapid" style="height:500px; width:100%;  box-shadow: -4px -5px 8px grey;">
+            <section class=" wow fadeIn world" id="mapid" style="height:400px; width:100%;  box-shadow: -4px -5px 8px grey;">
 
                 
                 <!-- Content -->
@@ -190,25 +193,26 @@
            <div class= "container-fluid">
             <!--Section: Cards-->
             <section class="text-left card-section "style="padding-left:30px; padding-right:30px;" id="video">
-                <h4 class="mx-5"><b>Trending</b></h4>
+                <h4 class="mx-4"><b>Trending</b></h4>
                 <!--Grid row-->
                 <div class="row mb-2 wow fadeIn">
 
                     <!--Grid column-->
-                    <div class="col-lg-2 col-md-6" style="padding:3px;">
+                    <div class="col-md-2" style="padding:3px;">
 
                         <!--Card-->
                         <div class="card">
 
                             <!--Card image-->
                             <div class="view overlay">
-                                <div class="embed-responsive embed-responsive-16by9 rounded-top">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cXTThxoywNQ" allowfullscreen></iframe>
-                                    <div class="mask flex-center rgba-blue-strong">">
-                                            <strong class="text-sm">there agric output</strong>
+
+                                <img src="img/murmuye.JPG" class="card-img-top" alt="">
+                                <a href="" target="_blank">
+                                    <div class="mask flex-center rgba-blue-strong">
+                                            <strong class="text-sm">The bahamas</strong>
 
                                     </div>
-                                </div>
+                                </a>
                             </div>
 
                             <!--Card content-->
@@ -216,8 +220,8 @@
                                 <!--Title-->
                                 <h6 class="mb-2" >
                                     <strong class="">There agric output</strong>
-                                </h6>
-                                    <a>Tello<i class="fa fa-check-circle"></i></a>
+                                </h6><p>
+                                    <a>Olando treese<i class="fa fa-check-circle"></i></a>
                                 </p>
                                 <p>
                                     <a>2.1M views</a> <a>.11months ago</a>
@@ -231,7 +235,7 @@
                     <!--Grid column-->
 
                     <!--Grid column-->
-                    <div class="col-lg-2 col-md-6"style="padding:3px;">
+                    <div class="col-md-2"style="padding:3px;">
 
                         <!--Card-->
                         <div class="card">
@@ -270,7 +274,7 @@
                     <!--Grid column-->
 
                         <!--Grid column-->
-                    <div class="col-lg-2 col-md-6 sec"style="padding:3px;">
+                    <div class="col-md-2 sec"style="padding:3px;">
 
                             <!--Card-->
                             <div class="card">
@@ -293,7 +297,7 @@
                                         <strong class="text-responsive">look out the best</strong>
                                     </h6>
                                     <p>
-                                        <a>Tello<i class="fa fa-check-circle"></i></a>
+                                        <a>Ginger Fade<i class="fa fa-check-circle"></i></a>
                                     </p>
                                     <p>
                                         <a>2.1M views</a> <a class="">2.1months ago</a>
@@ -308,7 +312,7 @@
                         <!--Grid column-->
 
                             <!--Grid column-->
-                    <div class="col-lg-2 col-md-6"style="padding:3px;">
+                    <div class="col-md-2"style="padding:3px;">
 
                             <!--Card-->
                             <div class="card">
@@ -317,7 +321,7 @@
                                 <div class="view overlay">
                                     <img src="img/sample.JPG" class="card-img-top img-responsive img-fluid image-video" alt="">
                                     <a href="" target="_blank">
-                                            <div class="mask flex-center rgba-blue-strong">">
+                                            <div class="mask flex-center rgba-blue-strong">
                                                     <strong class="text-sm">how to prepare</strong>
         
                                             </div>
@@ -345,7 +349,7 @@
                         <!--Grid column-->
 
                             <!--Grid column-->
-                    <div class="col-lg-2 col-md-6"style="padding:3px;">
+                    <div class="col-md-2"style="padding:3px;">
 
                             <!--Card-->
                             <div class="card">
@@ -354,7 +358,7 @@
                                 <div class="view overlay card-img">
                                     <img src="img/tiv.JPG" class="card-img-top img-fluid" alt="">
                                     <a href="" target="_blank">
-                                            <div class="mask flex-center rgba-blue-strong">">
+                                            <div class="mask flex-center rgba-blue-strong">
                                                     <strong class="text-sm">The local food of swaz</strong>
         
                                             </div>
@@ -368,7 +372,7 @@
                                         <strong>The local food of swaz</strong>
                                     </h6>
                                     <p>
-                                        <a>Tello<i class="fa fa-check-circle"></i></a>
+                                        <a>John doe<i class="fa fa-check-circle"></i></a>
                                     </p>
                                     <p>
                                         <a>2.1M views</a> <a>.11months ago</a>
@@ -384,7 +388,7 @@
     
 
                     <!--Grid column-->
-                    <div class="col-lg-2 col-md-6 "style="padding:3px;">
+                    <div class="col-md-2 "style="padding:3px;">
 
                         <!--Card-->
                         <div class="card">
@@ -429,9 +433,9 @@
 
 
                 <div class=" row">
-                    <h4 class="col-md-10"><b>Recomending</b></h4>
-                    <h5 class="col-md-2  subs bolds"  style="background-color:rgb(212, 5, 5);"><button type="button" class="btn">Subscription</button>
-                    </h5>
+                    <h4 class="col-md-8 mx-4" ><b> Recommending</b></h4>
+                    <button type="button" class="btn btn-danger col-md-2 px-1 pb-1 pt-2 "><h6 class="bold">Subscription 1k</h6></button>
+                </h5>
                 </div>
 
 
@@ -459,10 +463,10 @@
                             <div class="card-body">
                                 <!--Title-->
                                 <h6 class="mb-2">
-                                    <strong>Learn Bootstrap 4 with MDB</strong>
+                                    <strong>The fada tradition</strong>
                                 </h6>
                                 <p>
-                                    <a>Tello<i class="fa fa-check-circle"></i></a>
+                                    <a>Kunsa mc din<i class="fa fa-check-circle"></i></a>
                                 </p>
                                 <p>
                                     <a>2.1M views</a> <a>.11months ago</a>
@@ -678,11 +682,11 @@
                             <div class="view overlay">
                                 <img src="img/tiv.JPG" class="card-img-top img-fluid" alt="">
                                 <a href="" target="_blank">
-                                    <div class="mask flex-center rgba-blue-strong">">
+                                    <div class="mask flex-center rgba-blue-strong">
                                             <strong class="text-sm">why we give birth to</strong>
                                          </div> 
                                 </a>
-                            </div>s
+                            </div>
 
                             <!--Card content-->
                             <div class="card-body">
